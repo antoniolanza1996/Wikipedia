@@ -669,7 +669,7 @@ class WikipediaPage(object):
       return None
 
     try:
-      next_index = self.content.index("==", index)
+      next_index = self.content.index("==", index+1)
     except ValueError:
       next_index = len(self.content)
 
